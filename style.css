@@ -43,12 +43,12 @@ form {
 }
 
 /* 1 row */
-form .field {
+.form .field {
   position: relative; /* lié à .eye-icon |c le bloc de ref  */
   height: 50px;
   width: 100%;
   margin-top: 20px;
-  margin-top: 20px;
+  border-radius: 6px;
 }
 
 /* Champs */
@@ -64,10 +64,15 @@ form .field {
 
 /* Champs */
 .field input {
+  outline: none; /**/
   padding: 0 15px;
   border: 1px solid #cacaca;
 }
 
+/* champs clique montre que c acive*/
+.field input:focus {
+  border-bottom-width: 2px;
+}
 /* Doit etre superpose à l'input de password |noeud  <div class="field input-field"> */
 .eye-icon {
   position: absolute; /** relie a field*/
@@ -132,4 +137,19 @@ form .field {
   color: #232836;
 
   padding: 0 15px;
+}
+.media-options {
+  display: flex;
+  background-color: #4267b2;
+}
+
+.media-options a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.facebook {
+  color: white;
+  background-color: #4267b2;
 }
