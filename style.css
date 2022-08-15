@@ -44,7 +44,7 @@ form {
 
 /* 1 row */
 form .field {
-  position: relative; /* lié à .eye-icon */
+  position: relative; /* lié à .eye-icon |c le bloc de ref  */
   height: 50px;
   width: 100%;
   margin-top: 20px;
@@ -78,7 +78,17 @@ form .field {
   /*border: 1px solid #cacaca;*/
   color: #8b8b8b;
   cursor: pointer;
+  padding: 5px;
 }
+.field button {
+  color: #fff;
+  background-color: #0171d3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.field button:hover {
+}
+
 .form-link {
   text-align: center; /* centrer le text */
   margin-top: 10px;
@@ -96,4 +106,30 @@ form .field {
 }
 .form a:hover {
   text-decoration: underline;
+}
+
+/*----------  Element c/  Partie basse ----------*/
+
+/*Draw line astuce background-color */
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+}
+
+/* Généralement utilisé pour ajouter du contenu esthétique 
+à un élément via la propriété CSS content.*/
+/* Element Or */
+.line::before {
+  content: "Or";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #232836;
+
+  padding: 0 15px;
 }
