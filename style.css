@@ -44,8 +44,10 @@ form {
 
 /* 1 row */
 form .field {
-  height: 45px;
+  position: relative; /* lié à .eye-icon */
+  height: 50px;
   width: 100%;
+  margin-top: 20px;
   margin-top: 20px;
 }
 
@@ -66,8 +68,18 @@ form .field {
   border: 1px solid #cacaca;
 }
 
+/* Doit etre superpose à l'input de password |noeud  <div class="field input-field"> */
+.eye-icon {
+  position: absolute; /** relie a field*/
+  top: 50%; /* centre en hauteur */
+  transform: translateY(-50%); /* correction: centre en hauteur */
+  right: 10px;
+  font-size: 18px;
+  /*border: 1px solid #cacaca;*/
+  color: #8b8b8b;
+  cursor: pointer;
+}
 .form-link {
-  background-color: red;
   text-align: center; /* centrer le text */
   margin-top: 10px;
 }
@@ -77,4 +89,11 @@ form .field {
 .form-link a {
   font-size: 14px;
   font-weight: 400;
+}
+
+.form a {
+  color: #0171d3;
+}
+.form a:hover {
+  text-decoration: underline;
 }
