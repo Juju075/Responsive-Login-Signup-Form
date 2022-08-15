@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none; /* link's underline */
   list-style: none;
   font-family: "Poppins";
 }
@@ -20,7 +20,8 @@
   background-color: #4070f4;
 }
 
-/* Form card*/
+/*----------  Form card  ----------*/
+
 .form {
   max-width: 430px;
   width: 100%;
@@ -28,9 +29,38 @@
   border-radius: 6px;
   background: white;
 }
+
 header {
   font-size: 28px;
   font-weight: 600;
   color: #232836;
   text-align: center;
+}
+
+form {
+  margin-top: 30px;
+}
+
+/* 1 row */
+form .field {
+  height: 45px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Champs */
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none; /* sans bordure */
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+
+/* Champs */
+.field input {
+  padding: 0 15px;
+  border: 1px solid #cacaca;
 }
