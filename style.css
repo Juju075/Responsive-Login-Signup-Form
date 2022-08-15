@@ -1,6 +1,7 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* Faire les definition css en suivant les noeuds html ()*/
 /*----------  Reset ----------*/
 * {
   margin: 0;
@@ -63,4 +64,17 @@ form .field {
 .field input {
   padding: 0 15px;
   border: 1px solid #cacaca;
+}
+
+.form-link {
+  background-color: red;
+  text-align: center; /* centrer le text */
+  margin-top: 10px;
+}
+
+/* 2 elements targeted */
+.form-link span,
+.form-link a {
+  font-size: 14px;
+  font-weight: 400;
 }
